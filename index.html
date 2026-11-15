@@ -96,8 +96,8 @@ $('saveProduct').addEventListener('click',()=>{
  if(persist()){render();$('formStatus').textContent='Product saved in this browser. It is not live or published online.';$('pName').value='';$('pDesc').value='';$('pPrice').value='';$('pFile').value='';$('pPay').value='';$('productForm').hidden=true}
  };reader.onerror=()=>{$('formStatus').textContent='Could not read that file.'};reader.readAsDataURL(file);
 });
-  <script>
-const DB='storm-tweaks-store-v1';
+<script>
+   const DB='storm-tweaks-store-v1';
  let products=[
   {
     "name": "No Delay",
