@@ -89,7 +89,7 @@ function render(){
   const actions=document.createElement('div');actions.className='product-actions';
   const buy=document.createElement('button');buy.textContent='Buy · Demo';buy.addEventListener('click',()=>{alert('Demo only: no payment has been taken. A live checkout and secure delivery backend must be connected before customers can purchase.')});
   const download=document.createElement('button');download.className='secondary';download.textContent='Preview download';download.addEventListener('click',()=>downloadProduct(p));
-  actions.append(buy,download);card.append(art,cat,title,desc,price,file,actions);grid.append(card);
+  actions.append(buy);card.append(art,cat,title,desc,price,file,actions);grid.append(card);
  });
  const manage=$('manageList');manage.innerHTML='';
  if(!products.length){manage.textContent='No products yet.';return}
