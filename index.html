@@ -25,7 +25,7 @@ footer{text-align:center;border-top:1px solid var(--line);padding:25px;color:var
 @media(max-width:540px){.grid,.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}header{align-items:flex-start;flex-direction:column}.sectionhead{align-items:flex-start;flex-direction:column}}
 </style></head>
 <body>
-<header><div class="logo">STORM <span>TWEAKS ⚡</span></div><nav><a href="#store">STORE</a><a href="#creator">CREATOR DASHBOARD</a><a href="#safety">SAFETY</a></nav></header>
+<header><div class="logo">STORM <span>TWEAKS ⚡</span></div><nav><a href="#store">STORE< href="#safety">SAFETY</a></nav></header>
 <main>
 <div class="hero">
  <div><div class="kicker">Fortnite performance marketplace</div><h1>UPGRADE<br>YOUR GAME.</h1>
@@ -87,7 +87,7 @@ function render(){
   const price=document.createElement('div');price.className='price';price.textContent=money(p.price);
   const file=document.createElement('div');file.className='fine';file.textContent='File: '+p.fileName;
   const actions=document.createElement('div');actions.className='product-actions';
-  const buy=document.createElement('button');buy.textContent='Buy · Demo';buy.addEventListener('click',()=>{alert('Demo only: no payment has been taken. A live checkout and secure delivery backend must be connected before customers can purchase.')});
+  const buy = document.createElement('a'); buy.href = 'https://cash.app/$cang23456'; buy.textContent = 'Buy Now';
   const download=document.createElement('button');download.className='secondary';download.textContent='Preview download';download.addEventListener('click',()=>downloadProduct(p));
   actions.append(buy);card.append(art,cat,title,desc,price,file,actions);grid.append(card);
  });
