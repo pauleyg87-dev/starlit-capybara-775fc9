@@ -53,31 +53,6 @@ footer{text-align:center;border-top:1px solid var(--line);padding:25px;color:var
 </section>
 </main>
 <footer>STORM TWEAKS · Independent fan-made project. Not affiliated with or endorsed by Epic Games.</footer>
-<script>
-const DB='storm-tweaks-store-v1';
- let products=[
-  {
-    "name": "No Delay",
-    "category": "Tweaks",
-    "description": "Reduces system latency.",
-    "price": 5.00,
-    "fileName": "no delay.bat"
-  },
-   {
-    "name": "Ping tweaks",
-    "category": "Tweaks",
-    "description": "Reduces system latency.",
-    "price": 5.00,
-    "fileName": "Ping Tweaks"
-  },
-      {
-    "name": "All tweaks",
-    "category": "Tweaks",
-    "description": "Reduces system latency.",
-    "price": 5.00,
-    "fileName": "All tweaks"
-  }
-]
 const $=id=>document.getElementById(id);
 function money(n){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n)}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
@@ -121,5 +96,28 @@ $('saveProduct').addEventListener('click',()=>{
  if(persist()){render();$('formStatus').textContent='Product saved in this browser. It is not live or published online.';$('pName').value='';$('pDesc').value='';$('pPrice').value='';$('pFile').value='';$('pPay').value='';$('productForm').hidden=true}
  };reader.onerror=()=>{$('formStatus').textContent='Could not read that file.'};reader.readAsDataURL(file);
 });
-load();render();
+const DB='storm-tweaks-store-v1';
+ let products=[
+  {
+    "name": "No Delay",
+    "category": "Tweaks",
+    "description": "Reduces system latency.",
+    "price": 5.00,
+    "fileName": "no delay.bat"
+  },
+   {
+    "name": "Ping tweaks",
+    "category": "Tweaks",
+    "description": "Reduces system latency.",
+    "price": 5.00,
+    "fileName": "Ping Tweaks"
+  },
+      {
+    "name": "All tweaks",
+    "category": "Tweaks",
+    "description": "Reduces system latency.",
+    "price": 5.00,
+    "fileName": "All tweaks"
+  }
+]
 </script></body></html>
