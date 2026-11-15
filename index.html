@@ -38,20 +38,7 @@ footer{text-align:center;border-top:1px solid var(--line);padding:25px;color:var
 <div class="grid" id="productGrid"><div class="card empty"><h3>Store is ready for your first product.</h3><p>Open the Creator Dashboard below to add a tweak file, description and price.</p></div></div>
 </section>
 
-<section id="creator"><div class="sectionhead"><div><div class="kicker">Seller tools</div><h2>Creator dashboard</h2><p>Add and manage the digital files you want to list.</p></div><button id="toggleForm">＋ Add a product</button></div>
-<div class="card" id="productForm" hidden>
- <h3>New digital product</h3>
- <div class="formgrid">
-  <div class="field"><label for="pName">PRODUCT NAME *</label><input id="pName" maxlength="70" placeholder="Example: Competitive Settings Pack"></div>
-  <div class="field"><label for="pCategory">CATEGORY</label><select id="pCategory"><option>Fortnite</option><option>NVIDIA</option><option>Windows</option><option>Network</option><option>Guides</option><option>Other</option></select></div>
-  <div class="field"><label for="pPrice">PRICE (USD) *</label><input id="pPrice" type="number" min="0.50" max="500" step="0.01" placeholder="9.99"></div>
-  <div class="field"><label for="pFile">PRODUCT FILE * (.zip, .reg, .txt, .pdf)</label><input id="pFile" type="file" accept=".zip,.reg,.txt,.pdf,application/zip,application/pdf,text/plain"></div>
-  <div class="field full"><label for="pDesc">PRODUCT DESCRIPTION *</label><textarea id="pDesc" maxlength="500" placeholder="Explain what's included, compatible Windows versions, and what the buyer should know."></textarea></div>
-  <div class="field full"><label for="pPay">PAYMENT LINK (OPTIONAL)</label><input id="pPay" type="url" placeholder="https://... payment link from your payment provider"><span class="fine">A payment link can send a buyer to a hosted checkout. It does not automatically verify payment or unlock the file on this static demo site.</span></div>
- </div>
- <div class="warning"><strong>File safety:</strong> Only upload files you made or have permission to sell. Avoid scripts that disable security or make unreviewed system changes. Buyers should inspect files, back up important data and understand each change before applying it.</div>
- <div class="actions"><button id="saveProduct">Save product to store</button><button class="secondary" id="cancelForm">Cancel</button></div>
- <div class="status" id="formStatus" aria-live="polite"></div>
+
 </div>
 <div class="card" style="margin-top:14px"><h3>Manage your listings</h3><p class="fine">Products and uploaded files are stored in this browser on this device. They are not published to the internet or shared with customers automatically.</p><div id="manageList" class="muted">No products yet.</div></div>
 </section>
